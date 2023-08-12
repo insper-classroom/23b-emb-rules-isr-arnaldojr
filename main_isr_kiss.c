@@ -1,9 +1,9 @@
 #include "asf.h"
 
-int g_cnt = 0;
+volatile int g_cnt = 0;
 char g_str[10];
 int batata;
-int btn_pressed = 0; // Flag botão
+volatile int btn_pressed = 0; // Flag botão
 
 // This code creates a progress bar on an OLED screen that
 // increases when the button is pressed.
